@@ -1,0 +1,257 @@
+/* ------- Color Scheme  ------ */
+/* 
+Han Purple: #4C29FA 
+Light gray: #CFCFCF 
+Medium Slate Blue: #7466F9
+Black: #000000 
+Cultured White: #F1F1F1 
+*/
+
+/* image responsiveness code */
+img, object {
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    background:#7466F9;
+    padding: 2rem;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+header nav ul li a {
+    padding:0 3rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold; 
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid #F1F1F1;
+    color: #F1F1F1;
+
+}
+header nav ul li a:link{
+    border-bottom: 3px solid #F1F1F1;
+    background-color: none;
+}
+    
+header nav ul li a:hover{
+    color: #000;
+    border-bottom: 3px solid #000;
+}
+
+.main-nav h1, .main-nav i {
+    color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+}
+nav ul {
+    padding: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 2rem 0rem; 
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    color: #7466F9;
+    text-align: center;
+}
+
+h2 {
+    color: #4C29FA; 
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #4C29FA; 
+    text-align: center;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+i {
+    color: #F1F1F1;
+}
+
+.source {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0; 
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    background-color: #e6e6e6;
+}
+
+.masthead {
+    background-image: url(../img/masthead.jpg);
+    padding: 3rem; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 1rem; 
+}
+
+main {
+    margin: 2rem; 
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background: #7466F9;
+    padding: 1.5rem; 
+    clear: both; 
+}
+
+footer ul  {
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer ul li {
+    margin: 1rem; 
+}
+
+footer ul li a {
+    color: #F1F1F1;
+}
+
+footer ul li a:hover {
+    color: #000;
+}
+
+footer p, a {
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-content figcaption {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4C29FA;
+    text-decoration: underline
+}
+
+/* Media queries */ 
+@media only screen and (min-width: 35rem)  {
+
+    article figure {
+        float: left;
+        clear: left; 
+        margin-right: 2rem;
+        margin-bottom: 2rem; 
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .art-1 {
+        margin-bottom: 4rem; 
+    }
+
+    .art-2 {
+        margin-bottom: 6rem; 
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 1rem
+    }
+
+    article figure {
+        margin-top: 0; 
+    }
+
+}
+
+@media only screen and (min-width: 80rem) {
+    /* Everything is suppose to align to the left */
+    /* imgaes are supposed to be 25% */
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 12rem; 
+        gap: 2.5rem; 
+    }
+
+    article figure {
+        max-width: 25%;
+        float: left;
+        clear: left; 
+        margin-right: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .main-article{
+        max-width: 80%; 
+        margin: 5rem auto; 
+    }
+
+    article h2 { 
+        text-align: left;
+    }
+
+    .portfolio {
+        text-align: left;
+        padding-left: 3rem; 
+    }
+
+    article figure {
+        margin-left: 0; 
+    }
+}
+
+@media only screen and (min-width: 120rem) {
+
+    .main-nav {
+        padding-left: 14rem; 
+    }
+
+    .art-1, .art-2 {
+        margin-bottom: 10rem; 
+    }
+}
+
+
