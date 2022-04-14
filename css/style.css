@@ -252,6 +252,11 @@ footer p, a {
     .art-1, .art-2 {
         margin-bottom: 10rem; 
     }
+    
+    .portfolio {
+        text-align: left;
+        padding-left: 15rem;
+    }
 }
 
 
