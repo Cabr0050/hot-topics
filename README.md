@@ -1,1 +1,1 @@
-# loaded-content-by-ajax
+# hot-topics
